@@ -21,6 +21,14 @@ presentation/.build/
 presentation/node_modules/
 node_modules/
 
+# Retain local presentation drafts; publish only the finalized deliverables
+presentation/*
+!presentation/output/
+presentation/output/*
+!presentation/output/KEV_Ransomware_Presentation_Final.pptx
+!presentation/output/KEV_Ransomware_Presentation.pdf
+!presentation/output/Speaker_Notes.md
+
 # Local logs, temporary files, and duplicate project archives
 *.log
 *.tmp
