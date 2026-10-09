@@ -1,0 +1,30 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.runtime/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated presentation/build files and dependencies
+presentation/.build/
+presentation/node_modules/
+node_modules/
+
+# Local logs, temporary files, and duplicate project archives
+*.log
+*.tmp
+~$*
+KEV_Ransomware_Project.zip
+.DS_Store
+Thumbs.db

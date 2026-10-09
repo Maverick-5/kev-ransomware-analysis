@@ -1,0 +1,167 @@
+{
+  "n_rows_raw": 1694,
+  "n_cols_raw": 39,
+  "n_vendors": 283,
+  "n_cwe": 164,
+  "zero_day_count": 212,
+  "cvss_imputed": 62,
+  "n_rows_clean": 1694,
+  "n_cols_clean": 46,
+  "ransomware_rate": 0.2078,
+  "ransomware_n": 352,
+  "n_features": 64,
+  "r_lag_year_all": -0.916,
+  "r_lag_year_sub": -0.293,
+  "n_post_launch": 817,
+  "t_cvss": {
+    "t": 3.515,
+    "p": 0.00047529903944117227,
+    "d": 0.206,
+    "m1": 8.577,
+    "m0": 8.302,
+    "diff": 0.275
+  },
+  "chi2": {
+    "chi2": 16.29,
+    "p": 5.433641298624327e-05,
+    "v": 0.098,
+    "or": 1.635
+  },
+  "kruskal": {
+    "H": 5.533,
+    "p": 0.06289561218883177,
+    "eps2": 0.0065
+  },
+  "regression": [
+    {
+      "Subset": "All records",
+      "Model": "Linear Regression",
+      "n": 1694,
+      "Test R2": 0.4613,
+      "CV R2": 0.4671,
+      "CV sd": 0.045,
+      "RMSE (log days)": 0.7117
+    },
+    {
+      "Subset": "All records",
+      "Model": "Random Forest",
+      "n": 1694,
+      "Test R2": 0.631,
+      "CV R2": 0.5838,
+      "CV sd": 0.0597,
+      "RMSE (log days)": 0.589
+    },
+    {
+      "Subset": "All records",
+      "Model": "Gradient Boosting",
+      "n": 1694,
+      "Test R2": 0.5979,
+      "CV R2": 0.5481,
+      "CV sd": 0.0548,
+      "RMSE (log days)": 0.6149
+    },
+    {
+      "Subset": "Published after KEV launch",
+      "Model": "Linear Regression",
+      "n": 817,
+      "Test R2": -0.1513,
+      "CV R2": -0.1718,
+      "CV sd": 0.1406,
+      "RMSE (log days)": 0.3331
+    },
+    {
+      "Subset": "Published after KEV launch",
+      "Model": "Random Forest",
+      "n": 817,
+      "Test R2": -0.356,
+      "CV R2": -0.1607,
+      "CV sd": 0.1779,
+      "RMSE (log days)": 0.3615
+    },
+    {
+      "Subset": "Published after KEV launch",
+      "Model": "Gradient Boosting",
+      "n": 817,
+      "Test R2": -0.3755,
+      "CV R2": -0.1651,
+      "CV sd": 0.1684,
+      "RMSE (log days)": 0.3641
+    }
+  ],
+  "lag_r2_all": 0.5838,
+  "lag_r2_sub": -0.1607,
+  "n_train_cls": 1355,
+  "n_test_cls": 339,
+  "rf_cls_params": {
+    "max_depth": "None",
+    "min_samples_leaf": 1,
+    "n_estimators": 400
+  },
+  "classification": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.7876,
+      "Precision": 0.4615,
+      "Recall": 0.1714,
+      "F1": 0.25,
+      "ROC-AUC": 0.724,
+      "PR-AUC": 0.4064,
+      "CV AUC": 0.7312
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.7876,
+      "Precision": 0.45,
+      "Recall": 0.1286,
+      "F1": 0.2,
+      "ROC-AUC": 0.6948,
+      "PR-AUC": 0.3739,
+      "CV AUC": 0.711
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.5782,
+      "Precision": 0.2675,
+      "Recall": 0.6,
+      "F1": 0.37,
+      "ROC-AUC": 0.6443,
+      "PR-AUC": 0.3433,
+      "CV AUC": 0.6884
+    }
+  ],
+  "best_classifier": "Random Forest",
+  "top_features_cls": [
+    {
+      "feature": "desc_word_count",
+      "importance": 0.1646
+    },
+    {
+      "feature": "reference_count",
+      "importance": 0.1131
+    },
+    {
+      "feature": "cvss_base_score",
+      "importance": 0.0922
+    },
+    {
+      "feature": "affected_entry_count",
+      "importance": 0.0598
+    },
+    {
+      "feature": "has_patch_reference",
+      "importance": 0.0279
+    },
+    {
+      "feature": "has_exploit_reference",
+      "importance": 0.0249
+    },
+    {
+      "feature": "vendor_project_grp_Microsoft",
+      "importance": 0.0246
+    },
+    {
+      "feature": "ssvc_automatable_bin",
+      "importance": 0.0242
+    }
+  ]
+}

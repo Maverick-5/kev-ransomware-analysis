@@ -1,0 +1,9 @@
+# Versions that reproduce results_summary.json and the numbers in Final_Report.pdf.
+# scikit-learn 1.9 changes the random forest results (see README).
+numpy==2.3.4
+pandas==2.3.3
+scikit-learn==1.8.0
+scipy==1.17.1
+matplotlib==3.11.2
+seaborn==0.13.2
+jupyter

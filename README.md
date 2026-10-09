@@ -62,4 +62,3 @@ Feature importance is impurity-based and tends to favour continuous/high-cardina
 - [CVE Program](https://www.cve.org/) and [CVE List V5](https://github.com/CVEProject/cvelistV5), used by the builder for CVE metadata, CVSS, references, CWE, and CISA ADP/SSVC fields.
 
 Source data remains subject to the respective providers' terms. This repository does not assign a new licence to third-party source records.
-
