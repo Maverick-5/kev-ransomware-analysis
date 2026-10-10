@@ -15,7 +15,6 @@ The project asks two questions: can CVE traits predict the time until KEV listin
 | `build_dataset.py` | Dataset collection and enrichment script |
 | `results_summary.json` | Recorded statistics and model results |
 | `figures/` | Nine analysis figures |
-| `Final_Report.pdf`, `Final_Report.docx` | Written report |
 | `requirements.txt` | Pinned numerical/plotting dependencies; Jupyter is unpinned |
 | [`presentation/output/KEV_Ransomware_Presentation_Final.pptx`](presentation/output/KEV_Ransomware_Presentation_Final.pptx) | Final editable presentation |
 | [`presentation/output/KEV_Ransomware_Presentation.pdf`](presentation/output/KEV_Ransomware_Presentation.pdf) | Presentation PDF |
@@ -39,7 +38,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m jupyter notebook KEV_Ransomware_Analysis.ipynb
 ```
 
-Select the environment's Python kernel and run the notebook in order. The notebook uses **seed 42**, an **80/20 split**, five-fold cross-validation, and a stratified classification split. Running it writes the cleaned CSV, figures, and result summary. Numerical library versions can change model results; use the recorded requirements when reproducing the report. The requirements note specifically identifies scikit-learn 1.9 as changing the random forest results.
+Select the environment's Python kernel and run the notebook in order. The notebook uses **seed 42**, an **80/20 split**, five-fold cross-validation, and a stratified classification split. Running it writes the cleaned CSV, figures, and result summary. Numerical library versions can change model results; use the recorded requirements when reproducing the recorded results. The requirements note specifically identifies scikit-learn 1.9 as changing the random forest results.
 
 The committed raw dataset is the analysis snapshot. Rebuilding fetches current CVE records and can change its contents:
 
