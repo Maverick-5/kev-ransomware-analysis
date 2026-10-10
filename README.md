@@ -16,9 +16,6 @@ The project asks two questions: can CVE traits predict the time until KEV listin
 | `results_summary.json` | Recorded statistics and model results |
 | `figures/` | Nine analysis figures |
 | `requirements.txt` | Pinned numerical/plotting dependencies; Jupyter is unpinned |
-| [`presentation/output/KEV_Ransomware_Presentation_Final.pptx`](presentation/output/KEV_Ransomware_Presentation_Final.pptx) | Final editable presentation |
-| [`presentation/output/KEV_Ransomware_Presentation.pdf`](presentation/output/KEV_Ransomware_Presentation.pdf) | Presentation PDF |
-| [`presentation/output/Speaker_Notes.md`](presentation/output/Speaker_Notes.md) | Delivery notes and examiner questions |
 
 ## Recorded results
 
